@@ -1,3 +1,4 @@
+create database if not exists database_design;
 USE database_design;
 
 DROP TABLE IF EXISTS users;

@@ -1,5 +1,17 @@
 USE database_design;
 
+describe users;
+describe ads;
+describe categories;
+describe ad_category;
+
+select * from users;
+select * from ads;
+select * from categories;
+select * from ad_category;
+
+
+
 -- For a given ad, what is the email address of the user that created it?
 
 SELECT email as 'Email Address'

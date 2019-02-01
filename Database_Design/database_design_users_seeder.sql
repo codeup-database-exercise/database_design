@@ -1,6 +1,8 @@
 USE database_design;
 
+SET FOREIGN_KEY_CHECKS = 0;
 TRUNCATE users;
+SET FOREIGN_KEY_CHECKS = 1;
 
 INSERT INTO users (user, email, password)
 VALUES ('Ron', 'Ron@email.com', 'password123'),
