@@ -33,12 +33,17 @@ ORDER BY ads.title ASC;
 
 -- For a given category, show all the ads that are in that category.
 
-SELECT  COUNT(ads.title), categories.category
+SELECT ads.title, categories.category
 FROM ads
 JOIN ad_category ON ad_category.ad_id = ads.id
 JOIN categories ON ad_category.category_id = categories.id
-GROUP BY category;
+where categories.category = 'furniture';
 
 
 
 -- For a given user, show all the ads they have posted.
+
+SELECT users.user, ads.title
+FROM users
+join ads on ads.user_id = users.id
+where users.user = 'ron';
